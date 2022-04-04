@@ -4,6 +4,21 @@
     <h2>All houses for rent</h2>
     <img src="{% static 'app/images/logo.png' %}" width="10%" alt="Izubzu Logo"/><br/><br/>
     <a href='/'>Go Back</a>
+    
+    <div id="buttonArea">
+        <button @click="aesOrder">Price low to high</button>
+        <button @click="desOrder">Price high to low</button>
+    </div>
+    
+    <label>Please choose area:
+        <option value="Boat Quay">Boat Quay</option>
+        <option value="Chinatown">Chinatown</option>
+        <option value="Harbourfront" >Harbourfront</option>
+        <option value="Changi Airport">Changi Airport</option>
+
+    </select>
+    </label>
+    
     <table border=1>
         <thead>
             <th>House Title</th>
