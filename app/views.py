@@ -183,3 +183,4 @@ def area(request,area_name):
     result_dict = {'records': houses}
     
     return render(request,'app/area.html',result_dict)
+
